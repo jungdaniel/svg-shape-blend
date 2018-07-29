@@ -1,6 +1,6 @@
 {
   "name": "svg-shape-blend",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Declarative illustrator like shape blending",
   "main": "src/index.js",
   "scripts": {
