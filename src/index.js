@@ -12,4 +12,5 @@ class SVGShapeBlend {
   }
 }
 
+export const svgShapeBlend = new SVGShapeBlend();
 export default SVGShapeBlend;

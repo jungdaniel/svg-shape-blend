@@ -26,6 +26,26 @@ class ShapeBlend {
                 default: 0,
             },
             {
+                name: 'x',
+                type: BLENDABLE_TYPES.NUMBER,
+                default: 0,
+            },
+            {
+                name: 'y',
+                type: BLENDABLE_TYPES.NUMBER,
+                default: 0,
+            },
+            {
+                name: 'width',
+                type: BLENDABLE_TYPES.NUMBER,
+                default: 0,
+            },
+            {
+                name: 'height',
+                type: BLENDABLE_TYPES.NUMBER,
+                default: 0,
+            },
+            {
                 name: 'stroke-width',
                 type: BLENDABLE_TYPES.NUMBER,
                 default: 1,
@@ -134,9 +154,9 @@ class ShapeBlend {
             const startRGB = ShapeBlend.toRGB(start);
             const endRGB = ShapeBlend.toRGB(end);
 
-            const r = ShapeBlend.pad(ShapeBlend.lerp(startRGB.r, endRGB.r, p).toString(16));
-            const g = ShapeBlend.pad(ShapeBlend.lerp(startRGB.g, endRGB.g, p).toString(16));
-            const b = ShapeBlend.pad(ShapeBlend.lerp(startRGB.b, endRGB.b, p).toString(16));
+            const r = ShapeBlend.pad(Math.round(ShapeBlend.lerp(startRGB.r, endRGB.r, p)).toString(16));
+            const g = ShapeBlend.pad(Math.round(ShapeBlend.lerp(startRGB.g, endRGB.g, p)).toString(16));
+            const b = ShapeBlend.pad(Math.round(ShapeBlend.lerp(startRGB.b, endRGB.b, p)).toString(16));
             
             return `#${r}${g}${b}`;
         }
@@ -149,7 +169,7 @@ class ShapeBlend {
 			return 'transparent';
 		}
 		
-        return Math.round(start * (1 - p) + end * p);
+        return start * (1 - p) + end * p;
     }
 
     static isColor(value) {
