@@ -1,0 +1,23 @@
+{
+  "name": "svg-shape-blend",
+  "version": "1.0.0",
+  "description": "Declarative illustrator like shape blending",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "webpack -w --config=config/webpack.config.js --mode=production"
+  },
+  "keywords": [
+    "blend",
+    "svg",
+    "shape"
+  ],
+  "author": "Dániel Jung",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
