@@ -59,4 +59,19 @@ BlendSVG();
 
 ![Rect example](/src/examples/test2.png)
 
+
+```html
+<svg width="500" height="500">
+  <defs>
+    <blend from="#c6" to="#c7" steps="10"></blend>
+    <blend from="#c7" to="#c8" steps="10"></blend>
+  </defs>
+  <circle id="c6" r="10" cx="20" cy="20" stroke="#7fffd4" stroke-width="3" fill="#ffffff"></circle>
+  <circle id="c7" r="50" cx="140" cy="100" stroke="#ed143d" stroke-width="5" fill="#ffffff"></circle>
+  <circle id="c8" r="30" cx="80" cy="250" stroke="#ffd700" stroke-width="2" fill="#ffffff"></circle>
+</svg>
+```html
+
+![Circle example 2](/src/examples/test3.png)
+
 Currently only primitive rect and circle types are supported
