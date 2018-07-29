@@ -140,6 +140,15 @@ class ShapeBlend {
             
             return `#${r}${g}${b}`;
         }
+
+		if (start === 'none' || end === 'none') {
+			return 'none';
+		}
+		
+		if (start === 'transparent' || end === 'transparent') {
+			return 'transparent';
+		}
+		
         return Math.round(start * (1 - p) + end * p);
     }
 
