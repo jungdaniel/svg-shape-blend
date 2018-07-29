@@ -25,10 +25,10 @@ BlendSVG();
 ```html
 <svg width="500" height="500">
   <defs>
-    <blend from="#c1" to="#c2" steps="20"></blend>
-    <blend from="#c2" to="#c3" steps="30"></blend>
-    <blend from="#c3" to="#c4" steps="40"></blend>
-    <blend from="#c4" to="#c5" steps="30"></blend>
+    <blend from="#c1" to="#c2" steps="20"/>
+    <blend from="#c2" to="#c3" steps="30"/>
+    <blend from="#c3" to="#c4" steps="40"/>
+    <blend from="#c4" to="#c5" steps="30"/>
   </defs>
   <circle id="c1" r="10" cx="20" cy="20" stroke="none" stroke-width="1" fill="#ffd700"></circle>
   <circle id="c2" r="20" cx="40" cy="100" stroke="none" stroke-width="5" fill="#7fffd4"></circle>
@@ -44,10 +44,10 @@ BlendSVG();
 ```html
 <svg width="500" height="500">
   <defs>
-    <blend from="#r1" to="#r2" steps="40"></blend>
-    <blend from="#r2" to="#r3" steps="80"></blend>
-    <blend from="#r3" to="#r4" steps="80"></blend>
-    <blend from="#r4" to="#r5" steps="60"></blend>
+    <blend from="#r1" to="#r2" steps="40"/>
+    <blend from="#r2" to="#r3" steps="80"/>
+    <blend from="#r3" to="#r4" steps="80"/>
+    <blend from="#r4" to="#r5" steps="60"/>
   </defs>
   <rect id="r1" width="10" height="10" x="20" y="20" stroke="none" stroke-width="1" fill="#ffd700"></rect>
   <rect id="r2" width="20" height="20" x="40" y="100" stroke="none" stroke-width="5" fill="#7fffd4"></rect>
@@ -63,8 +63,8 @@ BlendSVG();
 ```html
 <svg width="500" height="500">
   <defs>
-    <blend from="#c6" to="#c7" steps="10"></blend>
-    <blend from="#c7" to="#c8" steps="10"></blend>
+    <blend from="#c6" to="#c7" steps="10"/>
+    <blend from="#c7" to="#c8" steps="10"/>
   </defs>
   <circle id="c6" r="10" cx="20" cy="20" stroke="#7fffd4" stroke-width="3" fill="#ffffff"></circle>
   <circle id="c7" r="50" cx="140" cy="100" stroke="#ed143d" stroke-width="5" fill="#ffffff"></circle>
