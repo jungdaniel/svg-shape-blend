@@ -68,7 +68,7 @@ class ShapeBlend {
                 throw new Error('Attribute "to" is not defined!');
             }
 
-            this.to = document.querySelector();
+            this.to = document.querySelector(toAttr);
             if (!this.to) {
                 throw new Error(`Could not find element with id: ${toAttr}! Please supply in a format of: #yourId`);
             }
