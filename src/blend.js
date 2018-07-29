@@ -107,7 +107,7 @@ class ShapeBlend {
           const element = document.createElementNS(SVG_NS, this.from.tagName);
           
           const currentAttributes = this.blendable.reduce((attr, v) => {
-            attr[v] = ShapeBlend.lerp(startAttributes[v.name], endAttributes[v.name], (i + 1) / (this.steps + 1))
+            attr[v.name] = ShapeBlend.lerp(startAttributes[v.name], endAttributes[v.name], (i + 1) / (this.steps + 1))
             return attr;
           }, {});
           
