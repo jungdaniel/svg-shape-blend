@@ -1,6 +1,11 @@
-### SVG Shape Blend
+### [SVG Shape Blend](https://www.npmjs.com/package/svg-shape-blend)
 
 Declarative library supporting Adobe Illustrator like blending functionality between primitive circle and rect shapes
+
+# Install
+```bash
+	npm i svg-shape-blend
+```
 
 # Import 
 ```javascript
