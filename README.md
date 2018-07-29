@@ -70,7 +70,7 @@ BlendSVG();
   <circle id="c7" r="50" cx="140" cy="100" stroke="#ed143d" stroke-width="5" fill="#ffffff"></circle>
   <circle id="c8" r="30" cx="80" cy="250" stroke="#ffd700" stroke-width="2" fill="#ffffff"></circle>
 </svg>
-```html
+```
 
 ![Circle example 2](/src/examples/test3.png)
 
