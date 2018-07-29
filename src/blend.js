@@ -124,8 +124,9 @@ class ShapeBlend {
     }
 
     render() {
-        const parent = this.from.parentElement;
-        this.shapes.forEach(shape => parent.appendChild(shape));
+		const group = document.createElementNS(SVG_NS, 'g');
+        this.shapes.forEach(shape => (group.appendChild(shape)));
+		this.from.parentNode.insertBefore(group, this.from.nextSibling);
     };
 
     static lerp(start, end, p) {
